@@ -74,3 +74,6 @@ The entire workflow is orchestrated within a Jupyter Notebook (`researchAgent.ip
 ## Output
 
 Upon successful execution, the script will generate a file named `ai_research_report.html` in the root directory. This file contains the formatted list of the top 10 AI research papers for the specified date.
+
+<img width="1269" height="822" alt="image" src="https://github.com/user-attachments/assets/085c60c0-1fc6-43db-a7e1-2b5f369c0d24" />
+
