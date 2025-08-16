@@ -9,7 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             color: #333;
@@ -26,72 +26,89 @@
             margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .title {
+        .paper-title {
+            color: #3498db;
             font-size: 1.2em;
-            font-weight: bold;
-            color: #2980b9;
             margin-bottom: 10px;
         }
-        .title a {
-            color: inherit;
+        .paper-title a {
             text-decoration: none;
+            color: inherit;
         }
-        .title a:hover {
+        .paper-title a:hover {
             text-decoration: underline;
         }
         .authors {
-            font-style: italic;
             color: #7f8c8d;
+            font-style: italic;
             margin-bottom: 10px;
         }
         .abstract {
-            margin-bottom: 10px;
-        }
-        .link {
-            color: #27ae60;
-            text-decoration: none;
-        }
-        .link:hover {
-            text-decoration: underline;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <h1>Top 10 AI Research Papers published on 2025-08-12</h1>
-
+    
     <div class="paper">
-        <div class="title"><a href="http://arxiv.org/abs/2508.09389v1" target="_blank">ProMode: A Speech Prosody Model Conditioned on Acoustic and Textual Inputs</a></div>
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.09389v1" target="_blank">ProMode: A Speech Prosody Model Conditioned on Acoustic and Textual Inputs</a></h2>
         <div class="authors">Eray Eren, Qingju Liu, Hyeongwoo Kim, Pablo Garrido, Abeer Alwan</div>
-        <div class="abstract">Prosody conveys rich emotional and semantic information of the speech signal as well as individual idiosyncrasies. We propose a stand-alone model that maps text-to-prosodic features such as F0 and energy and can be used in downstream tasks such as TTS. The ProMode encoder takes as input acoustic features and time-aligned textual content, both are partially masked, and obtains a fixed-length latent prosodic embedding.</div>
-        <a class="link" href="http://arxiv.org/abs/2508.09389v1" target="_blank">View Paper</a>
+        <div class="abstract">Prosody conveys rich emotional and semantic information of the speech signal as well as individual idiosyncrasies. We propose a stand-alone model that maps text-to-prosodic features such as F0 and energy and can be used in downstream tasks such as TTS. The ProMode encoder takes as input acoustic features and time-aligned textual content, both are partially masked, and obtains a fixed-length latent prosodic embedding. The decoder predicts acoustics in the masked region using both the encoded prosody input and unmasked textual content.</div>
     </div>
 
     <div class="paper">
-        <div class="title"><a href="http://arxiv.org/abs/2508.09378v1" target="_blank">APIO: Automatic Prompt Induction and Optimization for Grammatical Error Correction and Text Simplification</a></div>
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.09378v1" target="_blank">APIO: Automatic Prompt Induction and Optimization for Grammatical Error Correction and Text Simplification</a></h2>
         <div class="authors">Artem Chernodub, Aman Saini, Yejin Huh, Vivek Kulkarni, Vipul Raheja</div>
-        <div class="abstract">Recent advancements in large language models (LLMs) have enabled a wide range of natural language processing (NLP) tasks to be performed through simple prompt-based interactions. Consequently, several approaches have been proposed to engineer prompts that most effectively enable LLMs to perform a given task. In settings with a well-defined metric to optimize model performance, automatic prompt optimization (APO) methods have been developed to refine a seed prompt.</div>
-        <a class="link" href="http://arxiv.org/abs/2508.09378v1" target="_blank">View Paper</a>
+        <div class="abstract">Recent advancements in large language models (LLMs) have enabled a wide range of natural language processing (NLP) tasks to be performed through simple prompt-based interactions. In settings with a well-defined metric to optimize model performance, automatic prompt optimization (APO) methods have been developed to refine a seed prompt. Advancing this line of research, we propose APIO, a simple but effective prompt induction and optimization approach for the tasks of Grammatical Error Correction (GEC) and Text Simplification, without relying on manually specified seed prompts.</div>
     </div>
 
     <div class="paper">
-        <div class="title"><a href="http://arxiv.org/abs/2508.09350v1" target="_blank">Flow-SLM: Joint Learning of Linguistic and Acoustic Information for Spoken Language Modeling</a></div>
-        <div class="authors">Ju-Chieh Chou, Jiawei Zhou, Karen Livescu</div>
-        <div class="abstract">Textless spoken language models (SLMs) are generative models of speech that do not rely on text supervision. Most textless SLMs learn to predict the next semantic token, a discrete representation of linguistic content, and rely on a separate vocoder to add acoustic information to the generated speech. Such models have no access to acoustic context and no built-in control over acoustic details.</div>
-        <a class="link" href="http://arxiv.org/abs/2508.09350v1" target="_blank">View Paper</a>
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.09349v1" target="_blank">The Human-AI Hybrid Delphi Model: A Structured Framework for Context-Rich, Expert Consensus in Complex Domains</a></h2>
+        <div class="authors">Cathy Speed, Ahmed A. Metwally</div>
+        <div class="abstract">This study introduces and evaluates a Human-AI Hybrid Delphi (HAH-Delphi) framework designed to augment expert consensus development by integrating a generative AI model (Gemini 2.5 Pro), small panels of senior human experts, and structured facilitation. The HAH-Delphi was tested in three phases: retrospective replication, prospective comparison, and applied deployment in two applied domains. The framework offers a flexible, scalable approach for generating high-quality, context-sensitive consensus.</div>
     </div>
 
     <div class="paper">
-        <div class="title"><a href="http://arxiv.org/abs/2508.09324v1" target="_blank">TEN: Table Explicitization, Neurosymbolically</a></div>
-        <div class="authors">Nikita Mehrotra, Aayush Kumar, Sumit Gulwani, Arjun Radhakrishna, Ashish Tiwari</div>
-        <div class="abstract">We present a neurosymbolic approach, TEN, for extracting tabular data from semistructured input text. This task is particularly challenging for text input that does not use special delimiters consistently to separate columns and rows. Purely neural approaches perform poorly due to hallucinations and their inability to enforce hard constraints. TEN uses Structural Decomposition prompting - a specialized chain-of-thought prompting approach.</div>
-        <a class="link" href="http://arxiv.org/abs/2508.09324v1" target="_blank">View Paper</a>
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.09303v1" target="_blank">ParallelSearch: Train your LLMs to Decompose Query and Search Sub-queries in Parallel with Reinforcement Learning</a></h2>
+        <div class="authors">Shu Zhao, Tan Yu, Anbang Xu, Japinder Singh, Aaditya Shukla, Rama Akkiraju</div>
+        <div class="abstract">We propose ParallelSearch, a novel reinforcement learning framework that empowers large language models (LLMs) to recognize parallelizable query structures and execute multiple search operations concurrently. Our approach introduces dedicated reward functions that incentivize the identification of independent query components while preserving answer accuracy through jointly considering correctness, query decomposition quality, and parallel execution benefits.</div>
     </div>
 
     <div class="paper">
-        <div class="title"><a href="" target="_blank">LLM-as-a-Supervisor: Mistaken Therapeutic Behaviors Trigger Targeted Supervisory Feedback</a></div>
-        <div class="authors">Chen Xu, Zhenyu Lv, Tian Lan, Xianyang Wang, Luyao Ji, Leyang Cui, Minqiang Yang, Jian Shen, Qunxi Dong, Xiuling Liu, Juan Wang, Bin Hu</div>
-        <div class="abstract">Although large language models (LLMs) hold significant promise in psychotherapy, their direct application in patient-facing scenarios raises ethical and safety concerns. Therefore, this work shifts towards developing an LLM as a supervisor to train real therapists. In addition to the privacy of clinical therapist training data, a fundamental contradiction complicates the training of therapeutic behaviors.</div>
-        <a class="link" href="" target="_blank">View Paper</a>
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.08791v1" target="_blank">Feedback-Driven Tool-Use Improvements in Large Language Models via Automated Build Environments</a></h2>
+        <div class="authors">Junjie Ye, Changhao Jiang, Zhengyin Du, Yufei Xu, Xuesong Yao, Zhiheng Xi, Xiaoran Fan, Qi Zhang, Xuanjing Huang, Jiecao Chen</div>
+        <div class="abstract">We propose an automated environment construction pipeline, incorporating scenario decomposition, document generation, function integration, complexity scaling, and localized deployment. This enables the creation of high-quality training environments that provide detailed and measurable feedback without relying on external tools. Additionally, we introduce a verifiable reward mechanism that evaluates both the precision of tool use and the completeness of task execution.</div>
+    </div>
+
+    <div class="paper">
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.09288v1" target="_blank">Can AI Keep a Secret? Contextual Integrity Verification: A Provable Security Architecture for LLMs</a></h2>
+        <div class="authors">Aayush Gupta</div>
+        <div class="abstract">We present Contextual Integrity Verification (CIV), an inference-time security architecture that attaches cryptographically signed provenance labels to every token and enforces a source-trust lattice inside the transformer via a pre-softmax hard attention mask. CIV provides deterministic, per-token non-interference guarantees on frozen models: lower-trust tokens cannot influence higher-trust representations.</div>
+    </div>
+
+    <div class="paper">
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.08730v1" target="_blank">Magical: Medical Lay Language Generation via Semantic Invariance and Layperson-tailored Adaptation</a></h2>
+        <div class="authors">Weibin Liao, Tianlong Wang, Yinghao Zhu, Yasha Wang, Junyi Gao, Liantao Ma</div>
+        <div class="abstract">We propose Magical, an asymmetric LoRA architecture tailored for Medical Lay Language Generation (MLLG) under heterogeneous data scenarios. Magical employs a shared matrix A for abstractive summarization, along with multiple isolated matrices B for diverse lay-style generation. To preserve semantic fidelity during the lay language generation process, Magical introduces a Semantic Invariance Constraint to mitigate semantic subspace shifts on matrix A.</div>
+    </div>
+
+    <div class="paper">
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.08730v1" target="_blank">Adaptive Personalized Conversational Information Retrieval</a></h2>
+        <div class="authors">Fengran Mo, Yuchen Hui, Yuxing Tian, Zhaoxuan Tan, Chuan Meng, Zhan Su, Kaiyu Huang, Jian-Yun Nie</div>
+        <div class="abstract">We propose an adaptive personalization method, in which we first identify the required personalization level for a query and integrate personalized queries with other query reformulations to produce various enhanced queries. Then, we design a personalization-aware ranking fusion approach to assign fusion weights dynamically to different reformulated queries, depending on the required personalization level.</div>
+    </div>
+
+    <div class="paper">
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.08791v1" target="_blank">Revisiting Knowledge Graph Completion Evaluation: A Realistic Benchmark and Enhanced Metrics</a></h2>
+        <div class="authors">Zaiqiao Meng, Hongyu Ren, Jie Zhang, Richard McCreadie</div>
+        <div class="abstract">Knowledge Graph Completion (KGC) evaluation often relies on biased datasets and unrealistic evaluation protocols that favor simple statistical patterns over genuine reasoning. We introduce a rigorous benchmarking methodology and propose novel metrics that address three key limitations: head/tail entity imbalance, triple redundancy, and the separation of inference from memorization. Our benchmark derived from Wikidata rebalancing the predictive tasks proportionally to real-world data characteristics.</div>
+    </div>
+
+    <div class="paper">
+        <h2 class="paper-title"><a href="http://arxiv.org/abs/2508.09288v1" target="_blank">Helmholtz Decomposition for Interpretable Analysis of Neural Network Dynamics</a></h2>
+        <div class="authors">Yuki Asano, Jorge A. Hobert, Kim Stachenfeld, Dhruv Nandam</div>
+        <div class="abstract">We introduce a novel application of Helmholtz decomposition to analyze neural network dynamics by separating the network's vector field into curl-free (gradient) and divergence-free (solenoidal) components. This decomposition reveals that the gradient component dominates early learning phases by reducing the training loss, while the solenoidal component becomes prominent in later phases and is correlated with robustness metrics. We demonstrate this approach's utility across vision and language tasks.</div>
     </div>
 </body>
 </html>
